@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Dashboard del Administrador";
+}
+
+<h1 class="mb-4">Panel de Control - Admin</h1>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Usuarios</h5>
+                <p class="card-text">Total: @ViewData["TotalUsuarios"]</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Cuentas Bancarias</h5>
+                <p class="card-text">Total: @ViewData["TotalCuentas"]</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-warning mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Tarjetas de Crédito</h5>
+                <p class="card-text">Total: @ViewData["TotalTarjetas"]</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-danger mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Préstamos</h5>
+                <p class="card-text">Total: @ViewData["TotalPrestamos"]</p>
+            </div>
+        </div>
+    </div>
+</div>
+
